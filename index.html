@@ -1,65 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
+<html lang="en">
 
-      .container {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good To Fly</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
 
-      .split{
-        flex-basis: 45%;
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-      }
+<body>
+  <header>
+    <div class="container">
+        <a href="index.html">
+            <img src="IMGs/IMG_6319.JPG" alt="Good to Fly" class="logo">
+        </a>
+        <h1>Good To Fly</h1>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  </header>
 
-      .split img{
-        max-width: 100%;
-      }
+  <section class="hero">
+      <h2>Welcome to Your Next Adventure</h2>
+      <p>Planning your vacation? Get updated on the latest travel and staycation news and deals with us <b>Good To Fly</b></p>
+  </section>
 
-      a.button{
-        padding: 15px;
-        border-radius: 5px;
-        background-color: aquamarine;
-        color: black;
-        text-align: center;
-      }
-
-      @media screen and (max-width: 576px){
-        .split
-        {
-            flex: 1 100%;
-            flex-basis: 100%;
-            flex-grow: 0;
-        } 
-      }
-    </style>
-  </head>
-
-  <body>
-    <section class="container">
-      <div class="split">
-        <img src="https://picsum.photos/400/400" />
+  <section class="featured-destinations">
+      <h2>Latest news</h2>
+      <div class="carousel">
+        <a href="https://www.airasia.com/en/gb" class="carousel-item">
+          <div class="news">
+            <div class="img-area">
+              <img src="IMGs/IMG_6363.JPG" alt="Airasia flash deals">
+            </div>
+            <div class="text">
+              <h4>Flash deals form Airasia</h4>
+              <p>22% off all seats all flights<br>Fly-thru via KL to Phu Quoc, Colombo, Hyperabad & more<br>Travel period from 8 Jan - 30 Sep 2024</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.singaporeair.com/en_UK/sg/plan-travel/local-promotions/offers/?utm_source=telegram&utm_medium=goodtofly&utm_campaign=goodtofly_SIA" class="carousel-item">
+          <div class="news">
+            <div class="img-area">
+              <img src="IMGs/IMG_6364.JPG" alt="Singapore Airlines deals">
+            </div>
+            <div class="text">
+              <h4>Deals from Singapore Airlines</h4>
+              <p>Flights to over 60 destinations as low as $168<br>Travel between 1 Jan - 31 Oct 2024<br>Incl. flights to Hong Kong, Tokyo, Seoul, Beijing & more</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="carousel-item">
+          <div class="news">
+            <div class="img-area">
+              <img src="IMGs/IMG_6365.JPG" alt="Travel packing list">
+            </div>
+            <div class="text">
+              <h4>Packing list for travelling</h4>
+              <p>Travel Guide: MUST-HAVE Travel checklist<br>Ultimate packing list that will get you covered<br>Refer to this for a fuss-free packing<br>Save this for your upcoming trip!</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="carousel-item">
+          <div class="news">
+            <div class="img-area">
+              <img src="IMGs/IMG_6366.JPG" alt="Moonsoon season">
+            </div>
+            <div class="text">
+              <h4>Travel advisor for Moonsoon season</h4>
+              <p>Travel Guide: Moonsoon Season in Southeast Asia<br>Ultimate guide for your travels during the MoonSoon Season<br>Expect heavy downpours in these countries</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="split">
-        <h2>This is a pretty awesome heading</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          dolore iure ab veniam fugit perspiciatis dicta sapiente, eaque, velit
-          cupiditate consequuntur dolorum nobis vel. Consequatur voluptas
-          commodi omnis totam vero.
-        </p>
-        <a href="#" class="button">Let's Go!</a>
-      </div>
-    </section>
-  </body>
+  </section>
+
+  <section class="travel-places">
+    <h2>Featured Destinations</h2>
+    <div class="places">
+      <a href="https://www.timeout.com/singapore/things-to-do/101-things-to-do-in-singapore-sightseeing" class="places-items">
+        <div class="img">
+          <img src="IMGs/191212182124-04-singapore-buildings.jpg" alt="Picture of Singapore">
+          <h6>Singapore</h6>
+        </div>
+      </a>
+      <a href="https://www.viator.com/en-SG/Malaysia/d17" class="places-items">
+        <div class="img">
+          <img src="IMGs/Malaysia snapshot cover iso.jpg" alt="Picture of Malaysia">
+          <h6>Malaysia</h6>
+        </div>
+      </a>
+      <a href="https://www.holidify.com/collections/things-to-do-in-thailand" class="places-items">
+        <div class="img">
+          <img src="IMGs/image.jpg" alt="Picture of Thailand">
+          <h6>Thailand</h6>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+      <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        padding: 200
+      });
+      autoplay();
+      function autoplay(){
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+      }
+    }); 
+  </script>
+</body>
+
 </html>

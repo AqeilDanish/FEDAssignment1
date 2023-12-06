@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px; /* Adjust margin-right as needed */
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin-left: 15px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em;
+    background-color: #f0f0f0;
+}
+
+.featured-destinations {
+    text-align: center;
+    padding: 2em;
+}
+
+.destination-list {
+    text-align: center;
+    padding: 2em;
+}
+
+.contact-form {
+    text-align: center;
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
+
+.carousel {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20%; /* Adjust padding as needed */
+}
+
+.carousel .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%; /* Adjust width as needed */
+    margin: 0 auto;
+    background: #fff;
+    padding: 15%; /* Increase padding as needed */
+    text-align: left; /* Align text to the left */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for separation */
+}
+
+.img-area img {
+    width: 70%;
+    height: auto;
+}
+
+.text {
+    width: 400px;
+    color: #262626;
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+}
+
+.travel-places {
+    text-align: center;
+    padding: 2em;
+}
+
+.places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.places div img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.places h3 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.countries img {
+    width: 200px;
+    height: auto;
+}
+
+.destination-list .country-list {
+    display: flex;
+    align-items: flex-start;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.destination-list .country-list .image,
+.destination-list .country-list .content {
+    flex: 1 1 calc(50% - 20px); /* Adjust the width as needed, considering margin */
+    margin: 10px; /* Add margin to separate items */
+}
+
+.destination-list .country-list .image img {
+    width: 100%;
+    height: auto;
+}
+
+.destination-list .country-list .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.destination-list .country-list .content:before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    height: 100%; /* Make this the same height as the image */
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.destination-list .country-list ul li {
+    padding-top: 20px;
+}
+
+.content h4{
+    font: 400;
+    font-size: 18px;
+}
+
+.content p{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #262626;
+    border: 1px solid #262626;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer; 
+}
+
+.btn:hover{
+    border: 1px solid gray;
+    background: gray;
+    transition: 1s;
+}
+
+.container-about{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.content-section .content-about h3{
+    margin-top: 20px;
+    color: #262626;
+    font-size: 21px;
+}
+
+.content-section .content-about p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.content-section .content-about ul li{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.contactus .contactus-content{
+    float: left;
+    width: 55%;
+}
+
+.contactus .teleimg{
+    float: right;
+    width: 40%;
+}
+
+.contactus .teleimg img{
+    width: 100px;
+    height: auto;
+}
+
+.contactus .contactus-content p{
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+.contactus-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.newsletter-main{
+    background: linear-gradient(#fff, #78abff);
+    min-height: 100vh;
+    padding: 150px 0;
+    box-sizing: border-box;
+}
+
+.newsletter{
+    background: #262626;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 330px;
+    padding: 50px 30px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.newsletter hr{
+    width: 70px;
+    height: 3px;
+    margin: 30px auto;
+    border: 0;
+    background: rgba(225, 225, 225, 0.5);
+}
+
+.newsletter p{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(225, 225, 225, 0.8);
+    margin-bottom: 30px;
+}
+
+.newsletter input{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 55px;
+    border: 0px;
+    padding: 0 20px;
+    color: rgba(225, 225, 225, 0.8);
+    margin-bottom: 36px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.newsletter button{
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    border-radius: 3px;
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+    padding: 0px 28px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.newsletter button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .nav-links {
+        flex: 1;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 0;
+    }
+
+    .nav-links ul li::after {
+        width: 0;
+    }
+
+    .nav-links ul li:hover::after {
+        width: 0;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .container-about,
+    .contactus-container {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .content-section,
+    .image-section,
+    .contactus .contactus-content,
+    .contactus .teleimg {
+        width: 100%;
+        float: none;
+    }
+
+    .content-section,
+    .image-section {
+        margin-bottom: 20px;
+    }
+
+    .image-section img {
+        width: 100%;
+    }
+
+    .newsletter-main {
+        padding: 100px 0;
+    }
+
+    .newsletter {
+        max-width: 100%;
+    }
+}
